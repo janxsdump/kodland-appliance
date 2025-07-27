@@ -30,7 +30,7 @@ enemies = []
 # Upgrade config
 cooldown = 1.5  # tempo entre tiros (segundos)
 bullet_speed = 600
-bullet_power = 1
+bullet_power = 1.1
 multi_shot = 1
 freeze_duration = 1.0
 freeze_level = 0
@@ -261,6 +261,7 @@ def bounce(enemy):
 
 
 def draw_game():
+    screen.blit("bg", (0, 0))
     draw_wall_health_bar()
     player.draw()
     for bullet in bullets:
